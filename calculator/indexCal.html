@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="./indexCal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="calculator">
+        <div id="display">0</div>
+        <div class="button">
+            <button class="number" onclick="press(7);">7</button>
+            <button class="number" onclick="press(8);">8</button>
+            <button class="number" onclick="press(9);">9</button>
+            <button class="operator" onclick="setOperator('/');">&divide;</button>
+            <button class="number" onclick="press(4);">4</button>
+            <button class="number" onclick="press(5);">5</button>
+            <button class="number" onclick="press(6);">6</button>
+            <button class="operator" onclick="setOperator('*');">&times;</button>
+            <button class="number" onclick="press(1);">1</button>
+            <button class="number" onclick="press(2);">2</button>
+            <button class="number" onclick="press(3);">3</button>
+            <button class="operator" onclick="setOperator('-');">&minus;</button>
+            <button class="button0 number" onclick="press(0);">0</button>
+            <button class="number" onclick="press('.');">.</button>
+            <button class="operator" onclick="setOperator('+');">&plus;</button>
+            <button class="buttonC" onclick="clr();">C</button>
+            <button class="buttonEquals operator" onclick="calculate();">&equals;</button>
+        </div>
+    </div>
+    <script src="./indexCal.js"></script>
+</body>
+</html>
