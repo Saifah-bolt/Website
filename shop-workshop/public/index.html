@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Shop</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div><h1>Future Shop</h1></div>
+        <div>
+            <button id="viewCart">Cart</button>
+            <div id="cartSummary">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="padding-bottom: 15px;">Product name</th>
+                            <th style="padding-bottom: 15px;">Quantity</th>
+                            <th style="padding-bottom: 15px;">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cartSummary_items"></tbody>
+                    <tfoot>
+                        <th style="padding-top: 15px;">Total Price</th>
+                        <th id="cartQuantity_total" style="padding-top: 15px;">0</th>
+                        <th id="cartSummary_total" style="padding-top: 15px;">0</th>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section id="productList">
+        </section>
+    </main>
+
+    <script src="./index.js"></script>
+</body>
+</html>
